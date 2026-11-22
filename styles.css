@@ -1,4 +1,4 @@
-/* CSS by Christina Carrasquilla, iteration by */
+/* CSS by Christina Carrasquilla, iteration by Erika Lucio */
 
 /* ===== Color Palette ===== 
 
@@ -71,14 +71,12 @@ img {
 #screenings, #workshops, #collaborations {
     background-color: #1e293b;
     padding: 1rem;
-    padding: 1rem;
     border-left: 4px solid #38bdf8;
 }
 
 aside {
     background-color: #38bdf8;
     color: #1e293b;
-    padding: 1rem;
     padding: 1rem;
 }
 
@@ -102,6 +100,31 @@ footer {
     margin-top: 1rem;
 }
 
+@media screen and (min-width: 800px) {
+
+    body {
+        grid-template-columns:minmax(0, 1fr) 300px;
+    }
+
+    header, nav, footer {
+        grid-column: 1 / -1;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card-row section {
+        width: 30%;
+    }
+
+}
 /* ===== Media Query (Medium) ===== */
 /* write a media query for a screen with at least 800px */
 /* change the body's grid template to 1fr 300px */
